@@ -1,3 +1,9 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+
 body{
     background: url(https://media.istockphoto.com/id/512170222/photo/fans-rock-out.webp?b=1&s=170667a&w=0&k=20&c=pcvtMX5pAymcsLoCGPlt518eMSgQwKllUhAfnVOZp4E=) no-repeat;
     background-size: cover;
@@ -5,11 +11,21 @@ body{
     color:white;
 }
 
+a{
+    color:rgb(163, 43, 43);
+}
+
+header{
+    padding:3%;
+    display:flex;
+    align-items: center;
+    gap:65%;
+}
+
 #logo-box{
     display:flex;
     align-items: center;
     gap:2vh;
-
     font-family: arial;
     font-size:2vh;
 }
@@ -22,19 +38,25 @@ nav{
     display:flex;
     justify-content: flex-end;
     gap:3vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 main{
-    padding-top:50vh;
-    padding-left:45%;
+    padding:12% 55% 0 2%;
+    font-size:3vh;
+    font-family: tahoma;
+}
+
+main p{
+    margin-top:2%;
 }
 
 footer{
     display:flex;
     flex-direction:column;
-    background-color:rgba(255, 0, 0, 0.452);
-    width:300vh;
-    margin:2vh 0;
+    align-items:center;
+    padding: 3.5% 1% 0 1%;
+    gap:1vh;
 }
 
 #social-media{
