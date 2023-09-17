@@ -1,3 +1,5 @@
+/* INDEX PAGE AND GENERAL */
+
 *{
     margin:0;
     padding:0;
@@ -7,12 +9,12 @@
 body{
     background: url(https://media.istockphoto.com/id/512170222/photo/fans-rock-out.webp?b=1&s=170667a&w=0&k=20&c=pcvtMX5pAymcsLoCGPlt518eMSgQwKllUhAfnVOZp4E=) no-repeat;
     background-size: cover;
-
     color:white;
 }
 
 a{
-    color:rgb(163, 43, 43);
+    color:rgb(255, 0, 0);
+    mix-blend-mode:overlay;
 }
 
 header{
@@ -38,16 +40,17 @@ nav{
     display:flex;
     justify-content: flex-end;
     gap:3vh;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size:3vh;
 }
 
-main{
-    padding:12% 55% 0 2%;
+#index-main{
+    padding:11% 55% 0 2%;
     font-size:3vh;
     font-family: tahoma;
 }
 
-main p{
+#index-main p{
     margin-top:2%;
 }
 
@@ -55,11 +58,104 @@ footer{
     display:flex;
     flex-direction:column;
     align-items:center;
-    padding: 3.5% 1% 0 1%;
+    padding: 3.5% 1% 1% 1%;
     gap:1vh;
+    font-size:1.5vh;
+    font-family: Verdana;
 }
 
 #social-media{
     display:flex;
-    gap:1vh;
+    gap:2vh;
+}
+
+#social-media a{
+    font-size:3vh;
+    color:rgba(245, 245, 245, 0.5);
+}
+
+/* ------------------------------------------------ */
+/* ------------------ ABOUT PAGE ------------------ */
+/* ------------------------------------------------ */
+
+#about-main{
+    padding:5vh;
+}
+
+.about-box{
+    display:flex;
+    align-items: center;
+    font-family: tahoma;
+    padding:2vh 5vh;
+}
+
+.about-box h3{
+    font-size: 4vh;
+}
+
+.about-box img{
+    width:60%;
+    filter: grayscale(50%)
+}
+
+.about-box img:hover{
+    opacity: 80%;
+}
+
+.about-box .text-box{
+    display:flex;
+    flex-direction: column;
+    gap:2vh;
+    padding-left: 3vh;
+}
+
+.about-box .text-box-2{
+    padding-right: 3vh;
+}
+
+/* ------------------------------------------------ */
+/* ------------------ LINEUP PAGE ----------------- */
+/* ------------------------------------------------ */
+
+#search-box{
+    padding:2vh;
+    background-color:rgba(12, 207, 207, 0.438);
+}
+
+#radio-selection{
+    display:flex;
+}
+
+#container-bands{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2vh;
+    background-color:rgb(206, 206, 206);
+    padding:4% 4% 4% 10%;
+}
+
+.band-card{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family:tahoma;
+    height:8%;
+    width:22%;
+    background-color:rgb(156, 156, 156);
+    font-size:2vh;
+}
+
+.band-card img{
+    width:95%;
+    height:50%;
+    padding:3%;
+}
+
+.band-card-text{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:2vh;
+    margin-top:-5%;
+    padding:2%;
 }
