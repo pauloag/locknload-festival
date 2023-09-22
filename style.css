@@ -9,26 +9,29 @@
 body{
     background: url(https://media.istockphoto.com/id/512170222/photo/fans-rock-out.webp?b=1&s=170667a&w=0&k=20&c=pcvtMX5pAymcsLoCGPlt518eMSgQwKllUhAfnVOZp4E=) no-repeat;
     background-size: cover;
-    color:white;
+    color:whitesmoke;
 }
 
-a{
-    color:rgb(255, 0, 0);
-    mix-blend-mode:overlay;
+nav a{
+    color:rgb(219, 216, 216);
+}
+
+nav a:hover{
+    color:whitesmoke;
 }
 
 header{
     padding:3%;
     display:flex;
     align-items: center;
-    gap:65%;
+    justify-content: space-between;
 }
 
 #logo-box{
     display:flex;
     align-items: center;
     gap:2vh;
-    font-family: arial;
+    font-family: 'arial';
     font-size:2vh;
 }
 
@@ -40,13 +43,22 @@ nav{
     display:flex;
     justify-content: flex-end;
     gap:3vh;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
     font-size:3vh;
 }
 
+#stripe{
+    background-color: rgba(178, 34, 34, 0.384);
+    width: 100%;
+    position: absolute;
+    height: 6vh;
+    z-index: -1;
+    margin-left: -3%;
+}
+
 #index-main{
-    padding:11% 55% 0 2%;
-    font-size:3vh;
+    padding:11% 60% 2% 2%;
+    font-size:2.7vh;
     font-family: tahoma;
 }
 
@@ -62,6 +74,14 @@ footer{
     gap:1vh;
     font-size:1.5vh;
     font-family: Verdana;
+}
+
+footer i:hover{
+    color:white;
+}
+
+footer a{
+    color:firebrick;
 }
 
 #social-media{
@@ -118,20 +138,24 @@ footer{
 /* ------------------------------------------------ */
 
 #search-box{
+    display: flex;
     padding:2vh;
     background-color:rgba(12, 207, 207, 0.438);
+    align-items: center;
+    gap: 1%;
 }
 
 #radio-selection{
     display:flex;
+    gap:2vh;
 }
 
 #container-bands{
-    display:flex;
-    flex-wrap:wrap;
-    gap:2vh;
-    background-color:rgb(206, 206, 206);
-    padding:4% 4% 4% 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vh;
+    background-color:rgba(206, 206, 206, 0.493);
+    padding: 3% 0 3% 8%;
 }
 
 .band-card{
@@ -141,14 +165,14 @@ footer{
     font-family:tahoma;
     height:8%;
     width:22%;
-    background-color:rgb(156, 156, 156);
+    background-color:rgb(109, 109, 109);
     font-size:2vh;
 }
 
 .band-card img{
     width:95%;
     height:50%;
-    padding:3%;
+    padding:5% 3% 3% 3%;
 }
 
 .band-card-text{
