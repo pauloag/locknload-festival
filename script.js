@@ -1,4 +1,4 @@
-let bands = [
+const bands = [
     {
       name: 'lorem 1',
       genre: 'alternative',
@@ -51,13 +51,20 @@ let bands = [
     }
   ]
 
-const containerbands = document.querySelector("#container-bands");
-document.insert
+ let newBand =
+   `<div class="band-card">
+    <img src="https://images.unsplash.com/photo-1604514288114-3851479df2f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9jayUyMGJhbmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="esc">
+    <div class="band-card-text">
+      <h3>${bands[1].name}</h3>
+      <p>${bands[1].description}</p>
+    </div>
+  </div>`
 
-let filteredbands = bands.filter(checkGenre)
+for (let i = 0; i < 12; i++) {
+  document.getElementById("container-bands").innerHTML += newBand
+}
 
-let checkGenre(genre){
-    if (genre_selected == bands.genre){
-        return genre
-    }
+function radioClick(){
+  const genre = console.log(document.querySelector('input[name=genre]:checked').value)
+  return genre
 }
